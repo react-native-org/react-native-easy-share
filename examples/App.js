@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {test} from 'react-native-easy-share';
+import {isWXAppInstalled, registerApp} from 'react-native-easy-share';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -25,8 +25,10 @@ export default class App extends Component<Props> {
     this.share = this.share.bind(this);
   }
 
-  share() {
-    test();
+  async share() {
+    registerApp('12321312');
+    const isWXInstalled = await isWXAppInstalled();
+    console.warn('isWXInstalled:  ' + isWXInstalled);
   }
 
 

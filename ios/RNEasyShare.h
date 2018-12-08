@@ -16,7 +16,7 @@
 
 #import <React/RCTEventEmitter.h>
 
-@interface RNEasyShare : RCTEventEmitter <RCTBridgeModule>
+@interface RNEasyShare : NSObject <RCTBridgeModule>
 
 +(void)setCitconPayToken;
 +(BOOL)processOpenUrl:(UIApplication *)application openUrl:(NSURL *)url;

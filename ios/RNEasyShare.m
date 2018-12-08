@@ -18,9 +18,9 @@ RCT_EXPORT_MODULE();
     return dispatch_get_main_queue();
 }
 
-- (void)supportedEvents {
-//    return
-}
+//- (void)supportedEvents {
+////    return
+//}
 
 RCT_EXPORT_METHOD(share) {
     NSLog(@"%@",@"123");
