@@ -1,0 +1,35 @@
+{
+  "name": "react-native-easy-share",
+  "version": "0.0.1",
+  "description": "Easy to share to wexin/qq/weibo in your react native app",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-org/react-native-easy-share.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-native-org/react-native-easy-share/issues"
+  },
+  "homepage": "https://github.com/react-native-org/react-native-easy-share#readme",
+  "devDependencies": {
+    "react-native-wechat": "^1.9.10"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.40"
+  },
+  "importSort": {
+    ".js, .jsx, .es6, .es,": {
+      "parser": "babylon",
+      "style": "module-compact"
+    }
+  }
+}
